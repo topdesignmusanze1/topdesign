@@ -1,0 +1,87 @@
+.cta{
+padding:100px 10%;
+background:linear-gradient(135deg,#2563eb,#ec4899);
+text-align:center;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+/* soft glow background */
+
+.cta::before{
+content:"";
+position:absolute;
+width:400px;
+height:400px;
+background:#ffffff20;
+filter:blur(100px);
+top:-100px;
+left:-100px;
+}
+
+/* content */
+
+.ctaContent{
+position:relative;
+z-index:2;
+}
+
+.ctaContent h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+/* animated text */
+
+.ctaText{
+display:inline-block;
+max-width:700px;
+line-height:1.7;
+margin-bottom:30px;
+font-size:1rem;
+}
+
+.ctaText span{
+display:inline-block;
+margin-right:4px;
+}
+
+/* highlighted words */
+
+.highlight{
+font-weight:600;
+color:#ffffff;
+}
+
+/* button */
+
+.ctaBtn{
+display:inline-block;
+padding:14px 32px;
+background:white;
+color:#2563eb;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+/* hover */
+
+.ctaBtn:hover{
+background:#111827;
+color:white;
+}
+
+/* responsive */
+
+@media(max-width:600px){
+.ctaContent h2{
+font-size:1.8rem;
+}
+
+.ctaText{
+font-size:0.95rem;
+}
+}

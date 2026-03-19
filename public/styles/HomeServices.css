@@ -1,0 +1,118 @@
+.homeServices{
+padding:100px 10%;
+background:#ffffff;
+text-align:center;
+}
+
+/* header */
+
+.servicesHeader h2{
+font-size:2.5rem;
+color:#111827;
+margin-bottom:10px;
+}
+
+.servicesHeader p{
+color:#6b7280;
+margin-bottom:50px;
+}
+
+/* grid */
+
+.servicesGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+}
+
+/* card */
+
+.serviceCard{
+background:#f9fafb;
+padding:30px;
+border-radius:12px;
+transition:0.3s;
+cursor:pointer;
+position:relative;
+overflow:hidden;
+}
+
+/* gradient border top */
+
+.serviceCard::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:3px;
+background:linear-gradient(to right,#2563eb,#ec4899);
+}
+
+/* hover */
+
+.serviceCard:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 30px rgba(0,0,0,0.08);
+}
+
+/* icon */
+
+.icon{
+font-size:2.2rem;
+margin-bottom:15px;
+}
+
+/* title */
+
+.serviceCard h3{
+color:#2563eb;
+margin-bottom:10px;
+transition:0.3s;
+}
+
+/* text */
+
+.serviceCard p{
+color:#4b5563;
+font-size:0.95rem;
+}
+
+/* hover color */
+
+.serviceCard:hover h3{
+color:#ec4899;
+}
+
+/* button */
+
+.servicesBtn{
+margin-top:50px;
+}
+
+.servicesBtn a{
+padding:12px 28px;
+background:linear-gradient(to right,#2563eb,#ec4899);
+color:white;
+text-decoration:none;
+border-radius:30px;
+transition:0.3s;
+}
+
+.servicesBtn a:hover{
+opacity:0.9;
+}
+
+/* responsive */
+
+@media(max-width:1000px){
+.servicesGrid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.servicesGrid{
+grid-template-columns:1fr;
+}
+}

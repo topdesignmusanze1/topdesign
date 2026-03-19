@@ -1,0 +1,128 @@
+.heroSwiper {
+  height: 90vh;
+  width: 100%;
+}
+
+.heroSlide {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  width: 70%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  padding: 60px;
+  color: white;
+  position: relative;
+  border-left: 4px solid #ec4899;
+  clip-path: polygon( 
+        20% 0%,    /* top-left inward */
+    100% 0%,   /* top-right */
+    100% 100%, /* bottom-right */
+    20% 100%,  /* bottom-left inward */
+    40% 85%     /* middle-left tip */
+);
+}
+
+.heroInner {
+  max-width: 500px;
+  margin-left: 50%;
+}
+
+.heroInner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.heroInner p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.heroBtn {
+  padding: 14px 30px;
+  background: #2563eb;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.heroBtn:hover {
+  background: #ec4899;
+}
+
+/* CURVED SPLITTER */
+.curveDivider {
+  position: absolute;
+  right: 45%;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+}
+
+.curveDivider svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .heroContent {
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  .curveDivider {
+    display: none;
+  }
+
+  .heroInner h1 {
+    font-size: 2rem;
+  }
+
+  .heroInner p {
+    font-size: 1rem;
+  }
+}
+
+/* default bullets (not active) */
+
+.heroSwiper .swiper-pagination-bullet{
+ 
+  background: #2563eb;   /* blue */
+  opacity: 0.4;
+  margin: 0 6px;
+  transition: 0.3s;
+  
+
+}
+
+.heroSwiper .swiper-pagination-bullet-active{
+  background: #ec4899;   /* pink */
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* .heroSwiper .swiper-pagination{
+  position:absolute;
+  right:40px;
+  bottom:35px;
+  width:auto;
+  display:flex;
+  gap:10px;
+} */
+

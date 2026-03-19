@@ -1,0 +1,39 @@
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact h1{
+color:#2563eb;
+margin-bottom:30px;
+}
+
+form{
+max-width:500px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,
+textarea{
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+font-size:16px;
+}
+
+button{
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+font-weight:600;
+cursor:pointer;
+}
+
+button:hover{
+background:#ec4899;
+}

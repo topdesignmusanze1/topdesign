@@ -1,0 +1,123 @@
+.portfolio{
+padding:100px 10%;
+background:#f9fafb;
+text-align:center;
+}
+
+/* header */
+
+.portfolioHeader h2{
+font-size:2.5rem;
+color:#111827;
+margin-bottom:10px;
+}
+
+.portfolioHeader p{
+color:#6b7280;
+margin-bottom:50px;
+}
+
+/* grid */
+
+.portfolioGrid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+/* card */
+
+.portfolioCard{
+position:relative;
+overflow:hidden;
+border-radius:12px;
+cursor:pointer;
+}
+
+/* image */
+
+.portfolioCard img{
+width:100%;
+height:280px;
+object-fit:cover;
+transition:0.4s;
+}
+
+/* zoom effect */
+
+.portfolioCard:hover img{
+transform:scale(1.1);
+}
+
+/* overlay */
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+color:white;
+
+display:flex;
+flex-direction:column;
+justify-content:flex-end;
+
+padding:20px;
+opacity:0;
+transition:0.3s;
+}
+
+/* show overlay */
+
+.portfolioCard:hover .overlay{
+opacity:1;
+}
+
+/* category */
+
+.overlay span{
+font-size:0.8rem;
+opacity:0.8;
+}
+
+/* title */
+
+.overlay h3{
+margin-top:5px;
+}
+
+/* button */
+
+.portfolioBtn{
+margin-top:50px;
+}
+
+.portfolioBtn button{
+padding:12px 28px;
+border:none;
+border-radius:30px;
+background:linear-gradient(to right,#2563eb,#ec4899);
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.portfolioBtn button:hover{
+opacity:0.9;
+}
+
+/* responsive */
+
+@media(max-width:1000px){
+.portfolioGrid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+.portfolioGrid{
+grid-template-columns:1fr;
+}
+}

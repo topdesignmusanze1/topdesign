@@ -1,0 +1,15 @@
+.about{
+padding:80px 10%;
+text-align:center;
+}
+
+.about h1{
+color:#2563eb;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
