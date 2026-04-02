@@ -3,6 +3,12 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
+
+/* 
+body{
+  width: 80vw;
+  margin: auto;
+} */
 .hidden {
   opacity: 0;
   transform: translateY(60px);

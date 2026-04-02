@@ -1,50 +1,56 @@
 .heroSwiper {
-  height: 90vh;
+  height: auto;
   width: 100%;
+  position: relative;
 }
 
 .heroSlide {
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  overflow: hidden;
+  height: 80vh;
+  width: 100%;
+  display: inline-block;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size:contain;
 }
 
 .heroContent {
+   height: 100vh;
   width: 70%;
-  height: 100%;
+  display: inline-block;
+  position:absolute;
+  bottom: 0px;
+  right:0;
+ 
+ 
   background: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
-  padding: 60px;
+  
   color: white;
-  position: relative;
+ padding-bottom: 30px;
+ padding-right: 30px;
   border-left: 4px solid #ec4899;
   clip-path: polygon( 
         20% 0%,    /* top-left inward */
     100% 0%,   /* top-right */
     100% 100%, /* bottom-right */
     20% 100%,  /* bottom-left inward */
-    40% 85%     /* middle-left tip */
+    40% 80%     /* middle-left tip */
 );
 }
 
 .heroInner {
   max-width: 500px;
-  margin-left: 50%;
+  margin-left: 40%;
 }
 
 .heroInner h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   margin-bottom: 20px;
 }
 
 .heroInner p {
-  font-size: 1.2rem;
+  font-size: 1vw;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -80,22 +86,55 @@
 }
 
 @media (max-width: 900px) {
+
+
+  .swiper{
+    height:100vh;
+  }
+
+  .heroSlide{
+    height: 50vh;
+    background-size: cover;
+  }
   .heroContent {
-    width: 100%;
-    text-align: center;
+   
+    width: 100%;    
+    height: auto;
+
+    background-size: contain;
+
+    
+    position: absolute;
+    top: 49%;
+    clip-path: none;
+    padding: 0;
     background: rgba(0, 0, 0, 0.65);
+   
   }
 
   .curveDivider {
     display: none;
   }
 
+  .heroInner{
+    
+   margin: 0 auto;
+    padding-bottom: 10px;
+  }
   .heroInner h1 {
     font-size: 2rem;
+    padding-left: 10px;
+    margin-bottom: 20px;
   }
 
   .heroInner p {
     font-size: 1rem;
+    padding-left: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+
+        
+
   }
 }
 

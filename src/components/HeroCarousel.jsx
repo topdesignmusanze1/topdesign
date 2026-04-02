@@ -64,8 +64,10 @@ className="heroSwiper"
 
 <div
 className="heroSlide"
-style={{ backgroundImage:`url(${slide.image})`, backgroundPosition: "left", backgroundRepeat: "no-repeat", backgroundSize:"contain"}}
+style={{ backgroundImage:`url(${slide.image})`}}
 >
+
+  </div>
 
 <div className="heroContent">
 
@@ -88,7 +90,7 @@ Explore Services
 
 </div>
 
-</div>
+
 
 </SwiperSlide>
 
