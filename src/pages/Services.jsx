@@ -1,53 +1,233 @@
 import Reveal from "../components/Reveal";
 import "../../public/styles/Services.css"
 import { motion } from "framer-motion";
+import {Link} from "react-router-dom";
+import CTA from "../components/CTA"
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
 
-function Services() {
+import { div } from "framer-motion/client";
+
+function Services({Language}) {
+
+  const {lang}=useContext(LanguageContext);
+
   const services = [
-    "Graphic Design",
-    "Metallic Design",
-    "Branding",
-    "Clothing Sewing",
-    "Lightning Protection Installation"
+
+    {
+      title:"Graphic Design",
+      services:["Banners", "Stamps", "Logo", "Flyers", "Business cards", "badges"],
+      images: ["/assets/Design/badges.png", "/assets/Design/banner.png", "/assets/Design/Billboard.png", "/assets/Design/cards.png",
+         "/assets/Design/facturier.png", "/assets/Design/flyers.png", "/assets/Design/logos.png",
+        "/assets/Design/pullups.png", "/assets/Design/stamps.png"
+      ]
+
+    },
+    {
+      title:"Printing & Branding",
+     services:["Banners", "Stamps", "Logo", "Flyers", "Stickers"],
+      images: ["/assets/branding and printing/formats.png", "/assets/branding and printing/clothesPrint.png", "/assets/branding and printing/Keys.png", "/assets/branding and printing/Branding.png"]
+    },
+
+    {
+      title:"Clothing Sewing",
+      services:["structuring", "styling"],
+      images: ["/assets/sportswear/Sportswear.png"]
+    },
+
+    {
+      title:"Lightning Protection Installation",
+     services:["sportswear manufacturing"],
+      images: ["/assets/LPs/Copper.png", "/assets/LPs/Earlystreamer.png", "/assets/LPs/faraday.png", "/assets/LPs/Installation.png"]
+    },
+
+    {
+      title: "Metallic Design",
+      services:[""],
+      images: ["/assets/metallic/metallic.png", "/assets/metallic/ExteriorStylish.png"]
+    }
+
+  
   ];
 
-  return (
-    
-    <motion.div
-      className="services"
+  const servicesKin=[
+    {
+      title:"Graphic Design",
+      services:["Banners", "Stamps", "Logo", "Flyers", "Business cards", "badges"],
+      images: ["/assets/DesignKin/Badges1.png", "/assets/DesignKin/Banners1.png", "/assets/DesignKin/Billboard1.png",
+        "/assets/DesignKin/cards1.png", "/assets/DesignKin/Facturier1.png","/assets/DesignKin/Flyers1.png",
+        "/assets/DesignKin/kashe1.png", "/assets/DesignKin/Logo1.png", "/assets/DesignKin/pullup1.png"
+      ]
+
+    },
+    {
+      title:"Printing & Branding",
+     services:["Banners", "Stamps", "Logo", "Flyers", "Stickers"],
+      images: ["/assets/BrandingKin/branding1.png", "/assets/BrandingKin/DTF1.png", "/assets/BrandingKin/Imyenda1.png", "/assets/BrandingKin/Keys1.png"]
+    },
+
+    {
+      title:"Clothing Sewing",
+      services:["structuring", "styling"],
+      images: ["/assets/sportswear/Sportswear.png"]
+    },
+
+    {
+      title:"Lightning Protection Installation",
+     services:["sportswear manufacturing"],
+      images: ["/assets/LpsKin/Installation1.png", "/assets/LpsKin/Early1.png", "public/assets/LpsKin/Iron1.png"]
+    },
+
+    {
+      title: "Metallic Design",
+      services:[""],
+      images: ["/assets/metallicKin/metallic2.png", "/assets/metallicKin/metallic3.png"]
+    }
+
+
+  ];
+
+  return  (<motion.div
+      className="serviceShort"
       initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
     >
-      <Reveal>
-      <motion.h1
+      
+<Reveal>
+  <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         
-        Our Services
+        {lang==="eng"? "Our Products" : "Ibyo dukora"}
       </motion.h1>
-      </Reveal>
-<Reveal>
-  <motion.ul>
-  {services.map((service, i) => (
-        <motion.li
-        className=""
-          key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 + i * 0.1, duration: 0.6 }}
-        >
-          {service}
-        </motion.li >
-      ))}
-</motion.ul>
-  </Reveal>      
+      
+      <motion.p className="servicesHero">{lang ==="eng"? "We do Designing, Printing and branding, Lightning protection and Exterior metallic stylish.": "Dukora Graphic Design, Printing na Branding, Installation y'imirindankuba, Metallic design ndetse tunadoda imyenda y'ishuri ya siporo."}</motion.p>
+     
+</Reveal>
+
+
+  <motion.div className="designingCont">
+    <div className="sideBar">
+      <a href="#graphic">Graphic design</a>
+      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+    </div>
+
+   <div className="content" id="graphic">
+    {lang==="eng"?services[0].images.map((image,index)=>{
+return <img key={index} src={image} alt="service's image"/>
+    }): servicesKin[0].images.map((image,index)=>{
+      return <img key={index} src={image} alt="service's image"/>
+    })}
+
+   </div>
+  
+</motion.div>
+
+
+
+<hr />
+
+
+
+<motion.div className="sewingCont">
+
+  <div className="sideBar">
+    <a href="#sewing">{lang==="en" ? "Printing & Branding" : "Printing na Branding"}</a>
+      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+    </div>
+
+   <div className="content" id="sewing">
+     {lang==="eng"?services[1].images.map((image,index)=>{
+return <img key={index} src={image} alt="service's image"/>
+    }): servicesKin[1].images.map((image,index)=>{
+      return <img key={index} src={image} alt="service's image"/>
+    })}
+   </div>
+
+</motion.div>
+
+
+
+<hr />
+
+
+
+<motion.div className="printingCont">
+  <div className="sideBar">
+<a href="#printing">{lang==="eng" ? "School uniforms sewing" : "Kudoda imyenda y'ishuri"}</a>
+      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+
+    </div>
+
+   <div className="content"  id="printing">
+     {lang==="eng"?services[2].images.map((image,index)=>{
+return <img key={index} src={image} alt="service's image"/>
+    }): servicesKin[2].images.map((image,index)=>{
+      return <img key={index} src={image} alt="service's image"/>
+    })}
+   </div>
+
+</motion.div>
+
+
+
+<hr />
+
+
+
+<motion.div className="lightningCont">
+
+  <div className="sideBar">
+<a href="#lightning">{lang==="en" ? "Lightning Protection Installation" : "Imirindankuba"} </a>
+      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+    </div>
+
+   <div className="content" id="lightning">
+     {lang==="eng"?services[3].images.map((image,index)=>{
+return <img key={index} src={image} alt="service's image"/>
+    }): servicesKin[3].images.map((image,index)=>{
+      return <img key={index} src={image} alt="service's image"/>
+    })}
+   </div>
+
+</motion.div>
+
+
+
+<hr />
+
+
+
+<motion.div className="metalCont">
+
+  <div className="sideBar">
+<a href="#metallic">Metallic design</a>
+      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+    </div>
+
+   <div className="content" id="metallic">
+     {lang==="eng"?services[4].images.map((image,index)=>{
+return <img key={index} src={image} alt="service's image"/>
+    }): servicesKin[4].images.map((image,index)=>{
+      return <img key={index} src={image} alt="service's image"/>
+    })}
+   </div>
+
+</motion.div>
+
+<motion.div className="ctaEnd">
+ <CTA/>
+</motion.div>
+ 
+
+     
 
       
-    </motion.div>
-  );
+    </motion.div>)
+  
 }
 
 export default Services;

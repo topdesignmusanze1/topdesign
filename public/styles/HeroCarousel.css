@@ -56,12 +56,12 @@
 }
 
 .heroBtn {
-  padding: 14px 30px;
+  padding: 14px 15px;
   background: #2563eb;
   border: none;
   border-radius: 6px;
   color: white;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -72,13 +72,13 @@
 }
 
 .heroBtnContact {
-  padding: 14px 30px;
+  padding: 14px 15px;
   background: #ec4899;
   border: none;
   margin-left: 20px;
   border-radius: 6px;
   color: white;
-  font-weight: 600;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }

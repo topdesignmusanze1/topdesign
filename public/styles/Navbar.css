@@ -6,6 +6,7 @@ padding:10px;
 background:white;
 box-shadow:0 2px 10px rgba(0,0,0,0.05);
 position: relative;
+z-index: 4;
 }
 
 
@@ -35,7 +36,28 @@ color:#ec4899;
     color: #fff;
 }
 
+ .langPar{
+    background-color: #ec4899;
+    
+    border: 1 solid #fff;
 
+ }
+
+ .langPar select{
+    background-color: #ec4899;
+    color: #fff;
+    border: none;
+    height: 40px;
+   
+ }
+
+
+
+ .langPar select:focus{
+     border: none;
+     outline: none;
+
+ }
 
 
 @media (max-width: 800px) {
@@ -47,6 +69,11 @@ color:#ec4899;
     
     z-index: 3;
 
+}
+
+.langPar{
+    position: absolute;
+    right: 50px;
 }
 
 .humberger hr{

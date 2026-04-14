@@ -7,6 +7,8 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Portfolio from "../components/Portfolio";
 import CTA from "../components/CTA"
 import Metrics from "../components/Metrics";
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
 
 
 import {motion} from "framer-motion"
@@ -14,6 +16,7 @@ import {Swiper, SwiperSlide} from "swiper/react";
 import {Autoplay} from "swiper/modules";
 
 function Home() {
+  const {lang}=useContext(LanguageContext);
   return (
 
     <div className="home">
@@ -34,10 +37,10 @@ function Home() {
         transition={{ duration: 0.7 }}
       >
 
-        <h2>Welcome to Top Design</h2>
+        <h2>{lang==="eng"? "Welcome to Top Design" : "Ikaze muri Top Design"}</h2>
 
         <p>
-Top Design — Rooted in Rwanda, shaping safe, stylish, and sustainable solutions with creativity you can trust        </p>
+Top Design — {lang==="eng" ? "Rooted in Rwanda, shaping safe, stylish, and sustainable solutions with creativity you can trust" : "Turi ubukombe kandi turi igisobanuro cy'ubuziranenge, ubwiza, kuramba kandi turizewe mu byo dukora byose."}</p>
 
       </motion.div>
 

@@ -1,18 +1,22 @@
 import { motion } from "framer-motion";
 import "../../public/styles/WhyChooseUs.css";
 import Whatsapp from "./Whatsapp";
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
+
 
 
 import { Link } from "react-router-dom";
 
 
 function WhyChooseUs(){
+  const {lang} = useContext(LanguageContext);
 
   const reasons = [
-    { title: "Professional Quality", icon: "⭐" },
-    { title: "Reliable Service", icon: "⏱️" },
-    { title: "Affordable Pricing", icon: "💰" },
-    { title: "Customer Satisfaction", icon: "😊" }
+    { title: lang==="eng"? "Professional Quality" : "Dukora ibintu biramba", icon: "⭐" },
+    { title: lang==="eng" ? "Reliable Service" : "Turi abo kwizerwa", icon: "⏱️" },
+    { title: lang==="eng" ? "Affordable Pricing" : "Ntabwo duhenda", icon: "💰" },
+    { title: lang==="eng" ? "Customer Satisfaction" : "Dukora ibyo wifuza byose", icon: "😊" }
   ];
 
   return(
@@ -24,8 +28,8 @@ function WhyChooseUs(){
         whileInView={{opacity:1, y:0}}
         transition={{duration:0.6}}
       >
-        <h2>Why Choose Us</h2>
-        <p>Trusted solutions. Professional results.</p>
+        <h2>{lang==="eng" ? "Why Choose Us" : "Turi amahitamo meza"}</h2>
+        <p>{lang==="eng" ? "Trusted solutions. Professional results." : "Dukora ibintu byizewe kandi biramba."}</p>
       </motion.div>
 
       <div className="whyGrid">
@@ -55,7 +59,7 @@ function WhyChooseUs(){
         transition={{delay:0.5}}
       >
        <Link to="https://wa.me/250736350000">
-            Get started
+           {lang==="eng"? "Get started" : "Tuvugishe"} 
             </Link>
       </motion.div>
 

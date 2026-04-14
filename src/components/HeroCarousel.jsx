@@ -7,7 +7,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { motion } from "framer-motion";
 import {Link} from "react-router-dom";
-
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -16,36 +17,38 @@ import "../../public/styles/HeroCarousel.css";
 
 function HeroCarousel() {
 
+  const {lang} = useContext(LanguageContext);
+
 const slides = [
 
 {
 image: "/assets/lightning.png",
-title: "Lightning Protection Installation",
-text: "Protect your home and electrical systems with professional lightning protection installation."
+title: lang==="eng"?"Lightning Protection Installation":"Installation y'umurindankuba",
+text: lang==="eng" ? "Protect your home and electrical systems with professional lightning protection installation.": "Rinda ibyawe n'abawe inkuba ukoresheje umurindankuba tunagukorera installation y'umurindankuba"
 },
 
 {
 image: "/assets/graphic.png",
-title: "Creative Graphic Design",
-text: "Professional graphic design that communicates your message and strengthens your brand."
+title: lang==="eng" ? "Creative Graphic Design" : "Graphic Design y'umwimerere",
+text: lang==="eng" ? "Professional graphic design that communicates your message and strengthens your brand." :"Tugukorera Design nziza ituma abantu bamenya ibyo ukora n'aho ubikorera."
 },
 
 {
 image: "/assets/branding.png",
-title: "Your Printing & Branding Partner",
-text: "We deliver bold prints and smart branding solutions to help your business stand out—indoors, outdoors, and everywhere in between.."
+title: lang==="eng" ? "Your Printing & Branding Partner" : "Printing na Branding",
+text: lang==="eng" ? "We deliver bold prints and smart branding solutions to help your business stand out—indoors, outdoors, and everywhere in between." : "Dufite icapiro ry'ibyapa byose kandi twanagukorera na branding y'aho ukorera ndetse n'iy'ibikoresho byawe."
 },
 
 {
-image: "/images/sewing.jpg",
-title: "Professional school uniforms sewing",
-text: "High-quality sewing services for school uniforms clothing production."
+image: "/assets/Sewing.png",
+title: lang==="eng" ? "Professional school uniforms sewing" : "Kudoda imyambaro y'ishuri ya siporo",
+text: lang==="eng" ? "High-quality sewing services for school uniforms clothing production." : "Tudoda imyenda y'ishuri ya siporo ikomeye kandi isa neza"
 },
 
 {
-image: "/assets/lightning.png",
-title: "Exterior and interior metallic design",
-text: "Stylish your property with the strongest material -metal."
+image:"public/assets/Metallic1.png",
+title: "Metallic design",
+text: lang==="eng" ? "Stylish your property with the strongest material -metal." : "Dukoresha metallic design tugataka iwawe"
 },
 
 ];
@@ -90,11 +93,12 @@ transition={{duration:0.8}}
 <p>{slide.text}</p>
 
 <button className="heroBtn">
-Explore Services
+  <Link className="buttonLink" to="../Services">{ lang==="eng" ? "Explore Services" : "Reba ibyo dukora"}</Link>
+
 </button>
 
 <button className="heroBtnContact">
-<Link className="buttonLink" to="#">Contact us</Link>
+<Link className="buttonLink" to="https://wa.me/25073635000">{lang==="en" ? "Contact us" : "Tuvugishe"}</Link>
 </button>
 
 </motion.div>

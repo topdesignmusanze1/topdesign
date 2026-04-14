@@ -15,12 +15,15 @@ max-width:700px;
 margin:auto;
 line-height:1.7;
 font-size: 22px;
+text-align: start;
+line-height: 3rem;
+  
 }
 
 
 .heroBtn {
     margin-top: 30px;
-  padding: 14px 30px;
+  padding: 14px 15px;
   background: #2563eb;
   border: none;
   border-radius: 6px;
@@ -31,9 +34,11 @@ font-size: 22px;
 }
 
 
+
+
 .heroBtnContact {
      margin-top: 30px;
-  padding: 14px 30px;
+  padding: 14px 15px;
   background: #ec4899;
   border: none;
   margin-left: 20px;
@@ -42,4 +47,9 @@ font-size: 22px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+}
+
+.about a{
+  text-decoration: none;
+  color: #fff;
 }

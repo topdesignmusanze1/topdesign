@@ -1,6 +1,16 @@
+
+
 .contact{
-padding:80px 10%;
+
 text-align:center;
+}
+
+.contactus{
+    background-image: url("/assets/contact.png");
+    background-size: cover;
+    height: 70vh;
+    margin-top: -70px;
+    z-index: 0;
 }
 
 .contact h1{
@@ -8,32 +18,49 @@ color:#2563eb;
 margin-bottom:30px;
 }
 
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
+.contact img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+} 
+
+.contact a{
+    text-decoration: none;
+    color: #2563eb;
+
 }
 
-input,
-textarea{
-padding:12px;
-border:1px solid #ddd;
-border-radius:6px;
-font-size:16px;
+.contact a:hover{
+
+    text-decoration: underline;
+    transform: scale(0,1);
+    color: #00194e;
 }
 
-button{
-padding:12px;
-background:#2563eb;
-color:white;
-border:none;
-border-radius:6px;
-font-weight:600;
-cursor:pointer;
+.contactPage{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 80px auto;
+    width:100%;
+    gap:20px
+    
 }
 
-button:hover{
-background:#ec4899;
+
+.phoneNum,
+.whatsappNum,
+.emailNum {
+    padding: 20px;
+   
+   
+    border-radius: 30px;
+    border-right: 3px solid #ec4899;
+    
+    /* font-size: 20px; */
+   
+   
+
 }
+
+
+

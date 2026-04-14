@@ -1,12 +1,16 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../../public/styles/CTA.css";
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
 
 function CTA(){
 
-  const text = "From graphic design and branding to sewing, lightning protection and metallic design for building exterior and interior, we deliver solutions you can trust.";
+  const {lang} = useContext(LanguageContext);
 
-  const highlightWords = ["design","graphic", "lightning", "branding", "sewing", "electrical", "metallic"];
+  const text = lang==="eng" ? "From graphic design and branding to sewing, lightning protection and metallic design for building exterior and interior, we deliver solutions you can trust." : "Ibyo dukora byose byaba graphic design, printing na branding, ubudozi, installation y'imirindankuba na metallic design tugukorera ibintu byizewe.";
+
+  const highlightWords = ["design","graphic", "lightning", "branding", "sewing", "electrical", "metallic", "y'imirindankuba", "ubudozi", "printing"];
 
   return(
     <section className="cta">
@@ -19,7 +23,7 @@ function CTA(){
         viewport={{ once: true }}
       >
 
-        <h2>Ready to Start Your Project?</h2>
+        <h2>{lang ==="eng" ? "Ready to Start Your Project?" : "Witeguye gukorana natwe?"}</h2>
 
         {/* Animated Text */}
         <motion.p
@@ -56,7 +60,7 @@ function CTA(){
         </motion.p>
 
         <Link to="https://wa.me/250736350000" className="ctaBtn">
-          Request a Quote
+          {lang==="eng" ? "Request a Quote" : "Tuvugishe"}
         </Link>
 
       </motion.div>

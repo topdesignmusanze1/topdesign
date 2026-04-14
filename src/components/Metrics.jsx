@@ -1,14 +1,18 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import "../../public/styles/Metrics.css";
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react"
 
 function Metrics() {
 
+  const {lang} = useContext(LanguageContext);
+
   const metrics = [
-    { value: "120+", label: "Projects Completed" },
-    { value: "95%", label: "Client Satisfaction" },
-    { value: "8+", label: "Years of Experience" },
-    { value: "5+", label: "Services Offered" },
+    { value: "1000+", label:lang==="eng" ? "Projects Completed" : "Imishinga tumaze gukora" },
+    { value: "98%", label: lang==="eng" ? "Client Satisfaction" : "Abo dukorera baba bishimye" },
+    { value: "12+", label: lang==="eng" ? "Years of Experience" : "Imyaka y'uburambe"},
+    { value: "5+", label: lang==="eng" ? "Services Offered" : "Serivise dutanga"},
   ];
 
   return (
@@ -20,8 +24,8 @@ function Metrics() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2>Our Achievements</h2>
-        <p>Proven results and services you can trust.</p>
+        <h2>{lang==="eng" ? "Our Achievements" : "Turi abanyabigwi"}</h2>
+        <p>{lang==="eng" ? "Proven results and services you can trust." : "Imibare ntibeshya."}</p>
       </motion.div>
 
       <div className="metricsGrid">
@@ -45,7 +49,7 @@ function Metrics() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
       >
-        <Link to="/services">View Our Work</Link>
+        <Link to="/services">{lang==="eng" ? "View Our Work" : "Reba ibyo dukora"}</Link>
       </motion.div>
 
     </section>
