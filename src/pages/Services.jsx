@@ -9,8 +9,10 @@ import {useContext} from "react"
 import { div } from "framer-motion/client";
 
 function Services({Language}) {
+   const {lang}=useContext(LanguageContext);
+    const imagePath = lang === "eng" ? "/assets/services.png" : "/assets/IbyoDukora.png";
 
-  const {lang}=useContext(LanguageContext);
+ 
 
   const services = [
 
@@ -69,7 +71,7 @@ function Services({Language}) {
     {
       title:"Clothing Sewing",
       services:["structuring", "styling"],
-      images: ["/assets/sportswear/Sportswear.png"]
+      images: ["/assets/sportswearKin/sportwear1.png"]
     },
 
     {
@@ -95,24 +97,29 @@ function Services({Language}) {
     >
       
 <Reveal>
-  <motion.h1
+  <motion.div className="serHero" style={{backgroundImage:`url(${imagePath})`}}>
+<motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
         
-        {lang==="eng"? "Our Products" : "Ibyo dukora"}
+        {/* {lang==="eng"? "Our Products" : "Ibyo dukora"} */}
       </motion.h1>
+  </motion.div>
+  
       
       <motion.p className="servicesHero">{lang ==="eng"? "We do Designing, Printing and branding, Lightning protection and Exterior metallic stylish.": "Dukora Graphic Design, Printing na Branding, Installation y'imirindankuba, Metallic design ndetse tunadoda imyenda y'ishuri ya siporo."}</motion.p>
      
 </Reveal>
 
 
-  <motion.div className="designingCont">
+  <div className="designingCont">
     <div className="sideBar">
-      <a href="#graphic">Graphic design</a>
-      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+      <a href="#graphic" className="serviceHero">Graphic design</a>
+      <button class="btnSer"><a href="https://wa.me/250736350000"  style={{ color: "#2563eb",
+    textDecoration:" none",
+    fontWeight: "bolder"}}>{lang==="en" ? "Contact us":"Tuvugishe"}</a></button>
     </div>
 
    <div className="content" id="graphic">
@@ -124,7 +131,7 @@ return <img key={index} src={image} alt="service's image"/>
 
    </div>
   
-</motion.div>
+</div>
 
 
 
@@ -132,11 +139,13 @@ return <img key={index} src={image} alt="service's image"/>
 
 
 
-<motion.div className="sewingCont">
+<div className="sewingCont">
 
   <div className="sideBar">
-    <a href="#sewing">{lang==="en" ? "Printing & Branding" : "Printing na Branding"}</a>
-      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+    <a href="#sewing" className="serviceHero">{lang==="en" ? "Printing & Branding" : "Printing na Branding"}</a>
+      <button class="btnSer"><a to="https://wa.me/250736350000" style={{ color: "#2563eb",
+    textDecoration:" none",
+    fontWeight: "bolder"}}>{lang==="en" ? "Contact us":"Tuvugishe"}</a></button>
     </div>
 
    <div className="content" id="sewing">
@@ -147,7 +156,7 @@ return <img key={index} src={image} alt="service's image"/>
     })}
    </div>
 
-</motion.div>
+</div>
 
 
 
@@ -155,10 +164,12 @@ return <img key={index} src={image} alt="service's image"/>
 
 
 
-<motion.div className="printingCont">
+<div className="printingCont">
   <div className="sideBar">
-<a href="#printing">{lang==="eng" ? "School uniforms sewing" : "Kudoda imyenda y'ishuri"}</a>
-      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+<a href="#printing" className="serviceHero">{lang==="eng" ? "School uniforms sewing" : "Kudoda imyenda y'ishuri"}</a>
+      <button class="btnSer"><a href="https://wa.me/250736350000" style={{ color: "#2563eb",
+    textDecoration:" none",
+    fontWeight: "bolder"}}>{lang==="en" ? "Contact us":"Tuvugishe"}</a></button>
 
     </div>
 
@@ -170,7 +181,7 @@ return <img key={index} src={image} alt="service's image"/>
     })}
    </div>
 
-</motion.div>
+</div>
 
 
 
@@ -178,11 +189,13 @@ return <img key={index} src={image} alt="service's image"/>
 
 
 
-<motion.div className="lightningCont">
+<div className="lightningCont">
 
   <div className="sideBar">
-<a href="#lightning">{lang==="en" ? "Lightning Protection Installation" : "Imirindankuba"} </a>
-      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+<a href="#lightning" className="serviceHero">{lang==="en" ? "Lightning Protection Installation" : "Imirindankuba"} </a>
+      <button class="btnSer"><a to="https://wa.me/250736350000" style={{ color: "#2563eb",
+    textDecoration:" none",
+    fontWeight: "bolder"}}>{lang==="en" ? "Contact us":"Tuvugishe"}</a></button>
     </div>
 
    <div className="content" id="lightning">
@@ -193,7 +206,7 @@ return <img key={index} src={image} alt="service's image"/>
     })}
    </div>
 
-</motion.div>
+</div>
 
 
 
@@ -201,11 +214,13 @@ return <img key={index} src={image} alt="service's image"/>
 
 
 
-<motion.div className="metalCont">
+<div className="metalCont">
 
   <div className="sideBar">
-<a href="#metallic">Metallic design</a>
-      <button class="btnSer"><Link to="https://wa.me/250736350000">{lang==="en" ? "Contact us":"Tuvugishe"}</Link></button>
+<a href="#metallic"  className="serviceHero">Metallic design</a>
+      <button class="btnSer"><a href="https://wa.me/250736350000" style={{ color: "#2563eb",
+    textDecoration:" none",
+    fontWeight: "bolder"}}>{lang==="en" ? "Contact us":"Tuvugishe"}</a></button>
     </div>
 
    <div className="content" id="metallic">
@@ -216,7 +231,7 @@ return <img key={index} src={image} alt="service's image"/>
     })}
    </div>
 
-</motion.div>
+</div>
 
 <motion.div className="ctaEnd">
  <CTA/>

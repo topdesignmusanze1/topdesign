@@ -7,9 +7,11 @@ text-align:center;
 /* header */
 
 .portfolioHeader h2{
-font-size:2.5rem;
 color:#111827;
-margin-bottom:10px;
+ font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16px;
 }
 
 .portfolioHeader p{
@@ -86,12 +88,20 @@ opacity:0.8;
 
 .overlay h3{
 margin-top:5px;
+font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 /* button */
 
 .portfolioBtn{
 margin-top:50px;
+ font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .portfolioBtn button{
@@ -102,6 +112,10 @@ background:linear-gradient(to right,#2563eb,#ec4899);
 color:white;
 cursor:pointer;
 transition:0.3s;
+ font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .portfolioBtn button:hover{

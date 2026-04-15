@@ -45,12 +45,15 @@
 }
 
 .heroInner h1 {
-  font-size: 28px;
+  
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
   margin-bottom: 20px;
 }
 
 .heroInner p {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.6;
   margin-bottom: 30px;
 }
@@ -64,6 +67,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .buttonLink{
@@ -81,6 +88,10 @@
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 
@@ -166,7 +177,14 @@
     margin-left: 20px;
     font-weight: 400;
     height: 40px;
-    padding: 14px 15px
+    padding: 14px 15px;
+    
+  }
+
+  .heroBtn, .heroBtnContact {
+    margin: 10px auto;
+    /* display: block; */
+    /* width: 80%; */
   }
 }
 
@@ -197,3 +215,25 @@
   gap:10px;
 } */
 
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .heroSlide {
+    height: 40vh;
+  }
+  .heroContent {
+    height: auto;
+    padding: 15px;
+  }
+  .heroInner h1 {
+    font-size: 22px;
+  }
+  .heroInner p {
+    font-size: 14px;
+  }
+  .heroBtn, .heroBtnContact {
+    width: 10%;
+    font-size: 12px;
+  }
+}

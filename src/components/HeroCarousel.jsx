@@ -24,7 +24,7 @@ const slides = [
 {
 image: "/assets/lightning.png",
 title: lang==="eng"?"Lightning Protection Installation":"Installation y'umurindankuba",
-text: lang==="eng" ? "Protect your home and electrical systems with professional lightning protection installation.": "Rinda ibyawe n'abawe inkuba ukoresheje umurindankuba tunagukorera installation y'umurindankuba"
+text: lang==="eng" ? "Protect your home and electrical systems with professional lightning protection installation.": "Rinda ibyawe n'abawe inkuba ukoresheje umurindankuba. Tunagukorera installation y'umurindankuba"
 },
 
 {
@@ -36,19 +36,19 @@ text: lang==="eng" ? "Professional graphic design that communicates your message
 {
 image: "/assets/branding.png",
 title: lang==="eng" ? "Your Printing & Branding Partner" : "Printing na Branding",
-text: lang==="eng" ? "We deliver bold prints and smart branding solutions to help your business stand out—indoors, outdoors, and everywhere in between." : "Dufite icapiro ry'ibyapa byose kandi twanagukorera na branding y'aho ukorera ndetse n'iy'ibikoresho byawe."
+text: lang==="eng" ? "We deliver bold prints and smart branding solutions to help your business stand out—indoors, outdoors, and everywhere in between." : "Dufite icapiro ry'ibyapa byose kandi tunagukorera branding y'aho ukorera ndetse n'iy'ibikoresho byawe."
 },
 
 {
 image: "/assets/Sewing.png",
 title: lang==="eng" ? "Professional school uniforms sewing" : "Kudoda imyambaro y'ishuri ya siporo",
-text: lang==="eng" ? "High-quality sewing services for school uniforms clothing production." : "Tudoda imyenda y'ishuri ya siporo ikomeye kandi isa neza"
+text: lang==="eng" ? "High-quality sewing services for school uniforms clothing production." : "Tudoda imyenda y'ishuri ya siporo ikomeye kandi isa neza."
 },
 
 {
-image:"public/assets/Metallic1.png",
+image:"/assets/Metallic1.png",
 title: "Metallic design",
-text: lang==="eng" ? "Stylish your property with the strongest material -metal." : "Dukoresha metallic design tugataka iwawe"
+text: lang==="eng" ? "Style with strength. Style with metal." : "Dukoresha igisobanuro cy'imbaraga - icyuma - tugataka iwawe."
 },
 
 ];
@@ -93,12 +93,12 @@ transition={{duration:0.8}}
 <p>{slide.text}</p>
 
 <button className="heroBtn">
-  <Link className="buttonLink" to="../Services">{ lang==="eng" ? "Explore Services" : "Reba ibyo dukora"}</Link>
+  <a className="buttonLink" href="../Services">{ lang==="eng" ? "Explore Services" : "Reba ibyo dukora"}</a>
 
 </button>
 
 <button className="heroBtnContact">
-<Link className="buttonLink" to="https://wa.me/25073635000">{lang==="en" ? "Contact us" : "Tuvugishe"}</Link>
+<a className="buttonLink" href="https://wa.me/25073635000">{lang==="eng" ? "Contact us" : "Tuvugishe"}</a>
 </button>
 
 </motion.div>

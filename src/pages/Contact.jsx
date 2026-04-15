@@ -2,8 +2,14 @@ import Reveal from "../components/Reveal";
 import "../../public/styles/Contact.css"
 import {motion} from "framer-motion"
 import {Link} from "react-router-dom";
+import { LanguageContext } from "../components/LanguageContext";
+import {useContext} from "react";
 
 function Contact() {
+
+  const {lang}=useContext(LanguageContext);
+
+  const imagePath = lang === "eng" ? "/assets/contact.png" : "/assets/tuvugishe2.png";
   return (
     
 
@@ -15,14 +21,14 @@ function Contact() {
 
 
       <Reveal>
-        <motion.div className="contactus">
+        <motion.div className="contactus" style={{backgroundImage: `url(${imagePath})`,backgroundSize: "cover",  marginTop: "-70px"}}>
 
           <motion.h1
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.6 }}
         >
-          Contact Us
+         
         </motion.h1>
 
         </motion.div>
@@ -33,32 +39,32 @@ function Contact() {
 <motion.div className="contactPage">
 
 
-  <Reveal>
-    <motion.div className="phoneNum">
+  
+    <motion.div className="phoneNum boxCont">
       <img src="/assets/call2.png"/>
-      <motion.h3>Call us</motion.h3>
-      <motion.p>Need immediate assistance? Our team is ready to help you with any inquiries or support.</motion.p>
+      <motion.h3>{lang==="eng" ? "Call us" : "Duhamagare"}</motion.h3>
+      <motion.p>{lang==="eng" ? "Need immediate assistance? Our team is ready to help you with any inquiries or support" : "Niba wifuza ubufasha bwihuse duhamagare kandi twiteguye kugufasha"}.</motion.p>
       <motion.p><Link to="tel:+250736350000">0736350000</Link></motion.p>
     </motion.div>
-  </Reveal>
+  
 
-  <Reveal>
-    <motion.div className="whatsappNum">
+  
+    <motion.div className="whatsappNum boxCont">
       <img src="/assets/whatsapp2.png"/>
-      <motion.h3>WhatsApp us</motion.h3>
-      <motion.p>Prefer chatting? Reach out to us on WhatsApp for quick responses and personalized guidance.</motion.p>
-      <motion.p>WhatsApp us on <Link to="https://wa.me/250736350000">Here</Link></motion.p>
+      <motion.h3>{lang==="eng" ? "WhatsApp us" : "Tuvugishe kuri WhatsApp"}</motion.h3>
+      <motion.p>{lang==="eng" ? "Prefer chatting? Reach out to us on WhatsApp for quick responses and personalized guidance." : "Dushobora no kuvugana duchatinga kuri WhatsApp kandi turagusubiza byihuse ndetse bihuje n'ibyo wifuza."}</motion.p>
+      <motion.p>{lang==="eng"?"WhatsApp us on":"Kanda"} <Link to="https://wa.me/250736350000">{lang==="eng"?"Here":"Hano"}</Link></motion.p>
     </motion.div>
-  </Reveal>
+  
 
-  <Reveal>
-    <motion.div className="emailNum">
+  
+    <motion.div className="emailNum boxCont">
       <img src="/assets/mail1.png"/>
-      <motion.h3>Write to us</motion.h3>
-      <motion.p>For detailed questions or business inquiries, send us an email and we’ll get back to you shortly.</motion.p>
+      <motion.h3>{lang==="eng"?"Write to us":"Twandikire"}</motion.h3>
+      <motion.p>{lang==="eng" ?"For detailed questions or business inquiries, send us an email and we’ll get back to you shortly.": "Niba wifuza kutwandikira mu buryo burambuye ku mishinga twagukorera, twoherereze ubutumwa kuri imeyiri yacu kandi tuzagusubiza bidatinze."}</motion.p>
       <motion.p><Link to="mailto:topdesign@example.com">topdesign@example.com</Link></motion.p>
     </motion.div>
-  </Reveal>
+  
 
 </motion.div>
      
@@ -68,3 +74,4 @@ function Contact() {
 }
 
 export default Contact;
+

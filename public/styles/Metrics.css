@@ -5,9 +5,12 @@
 }
 
 .metricsHeader h2 {
-  font-size:2.5rem;
+  
   color:#2563eb;
-  margin-bottom:10px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16px;
 }
 
 .metricsHeader p {
@@ -38,9 +41,11 @@
 }
 
 .metricCard h3 {
-  font-size:2rem;
   color:#2563eb;
-  margin-bottom:10px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 12px;
 }
 
 .metricCard p {
@@ -49,6 +54,13 @@
 }
 
 /* Button */
+
+.metricCard{
+   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
 .metricsBtn a {
   display:inline-block;
@@ -59,6 +71,10 @@
   text-decoration:none;
   font-weight:600;
   transition:0.3s;
+   font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .metricsBtn a:hover {

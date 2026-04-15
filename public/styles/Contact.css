@@ -6,15 +6,21 @@ text-align:center;
 }
 
 .contactus{
-    background-image: url("/assets/contact.png");
-    background-size: cover;
-    height: 70vh;
-    margin-top: -70px;
+    
+    
+    height: 60vh;
+    background-position: center;
+  background-size: cover;
+  height: 60vh;
     z-index: 0;
 }
 
 .contact h3{
 color:#2563eb;
+font-size: 22px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 12px;
 
 }
 
@@ -53,14 +59,62 @@ color:#2563eb;
     padding: 20px;
    
    
-    border-radius: 30px;
+    border-radius: 20px;
     border-right: 3px solid #ec4899;
     
     /* font-size: 20px; */
    
    
+   
 
 }
+
+.boxCont:hover{
+     box-shadow: 2px 2px 3px #00194e;
+     
+}
+
+
+@media (max-width: 900px) {
+  .contactus { height: 40vh; }
+  .contactPage {
+    grid-template-columns: 1fr 1fr; /* two columns on tablets */
+  }
+
+  .contact h3 { font-size: 20px; }
+
+  .contactus{
+    height: 50vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactus { height: 30vh; }
+
+  .contactPage {
+    grid-template-columns: 1fr; /* single column on phones */
+  }
+
+  .contact img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .contact h3 { font-size: 18px; }
+
+  .phoneNum,
+  .whatsappNum,
+  .emailNum {
+    text-align: center;
+    border-right: none;
+    border-bottom: 2px solid #ec4899;
+  }
+
+   .contactus{
+    height: 50vh;
+  }
+}
+
 
 
 
