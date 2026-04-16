@@ -77,7 +77,7 @@ function Services({Language}) {
     {
       title:"Lightning Protection Installation",
      services:["sportswear manufacturing"],
-      images: ["/assets/LpsKin/Installation1.png", "/assets/LpsKin/Early1.png", "public/assets/LpsKin/Iron1.png"]
+      images: ["/assets/LpsKin/Installation1.png", "/assets/LpsKin/Early1.png", "/assets/LpsKin/Iron1.png"]
     },
 
     {
