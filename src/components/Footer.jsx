@@ -35,7 +35,7 @@ function Footer() {
               Chat on WhatsApp
             </Link>
           </p>
-          <p>Email: info@topdesign.rw</p>
+          <p className="footEmail">Email: <a href="mailto:topdesign85@gmail.com">topdesign85@gmail.com</a></p>
         </div>
 
         {/* Social Links */}

@@ -35,6 +35,16 @@
   margin-bottom: 0.5rem;
 }
 
+.footEmail a{
+  text-decoration: none;
+  color:#0f9d58;
+  font-weight: bolder;
+}
+
+.footEmail a:hover{
+  text-decoration: underline;
+}
+
 .social-links a {
   margin-right: 15px;
   color: #ddd;

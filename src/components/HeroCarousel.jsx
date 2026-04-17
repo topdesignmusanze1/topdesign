@@ -98,7 +98,7 @@ transition={{duration:0.8}}
 </button>
 
 <button className="heroBtnContact">
-<a className="buttonLink" href="https://wa.me/25073635000">{lang==="eng" ? "Contact us" : "Tuvugishe"}</a>
+<a className="buttonLink" href="https://wa.me/250736350000">{lang==="eng" ? "Contact us" : "Tuvugishe"}</a>
 </button>
 
 </motion.div>

@@ -62,7 +62,7 @@ function Contact() {
       <img src="/assets/mail1.png"/>
       <motion.h3>{lang==="eng"?"Write to us":"Twandikire"}</motion.h3>
       <motion.p>{lang==="eng" ?"For detailed questions or business inquiries, send us an email and we’ll get back to you shortly.": "Niba wifuza kutwandikira mu buryo burambuye ku mishinga twagukorera, twoherereze ubutumwa kuri imeyiri yacu kandi tuzagusubiza bidatinze."}</motion.p>
-      <motion.p><Link to="mailto:topdesign@example.com">topdesign@example.com</Link></motion.p>
+      <motion.p><Link to="mailto:topdesign85@gmail.com">topdesign85@gmail.com</Link></motion.p>
     </motion.div>
   
 
