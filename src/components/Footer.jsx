@@ -42,9 +42,11 @@ function Footer() {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+          <a href="https://www.facebook.com/profile.php?id=61567609555845"><img src="/assets/SocialSvg/facebook.svg" className="socialNmae"/></a>  
+            <a href="https://www.instagram.com/topdesign_rwanda"><img src="/assets/SocialSvg/instagram.svg" className="socialNmae"/></a>
+            <a href="https://www.tiktok.com/@topdesign_rwanda"><img src="/assets/SocialSvg/tiktok.svg" className="socialNmae"/></a>
+            <a href="https://www.youtube.com/channel/UC_TAj7cwXRDLxBdH_MmeyyQ"><img src="/assets/SocialSvg/youtube.svg" className="socialNmae"/></a>
+
           </div>
         </div>
       </div>
