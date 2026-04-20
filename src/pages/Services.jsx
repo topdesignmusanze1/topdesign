@@ -56,8 +56,8 @@ function Services({Language}) {
     {
       title:"Graphic Design",
       services:["Banners", "Stamps", "Logo", "Flyers", "Business cards", "badges"],
-      images: ["/assets/DesignKin/Badges1.png", "/assets/DesignKin/Banners1.png", "/assets/DesignKin/Billboard1.png",
-        "/assets/DesignKin/cards1.png", "/assets/DesignKin/Facturier1.png","/assets/DesignKin/Flyers1.png",
+      images: ["/assets/DesignKin/Badges1.png", "/assets/DesignKin/ibyapa1.png", "/assets/DesignKin/Billboard1.png",
+        "/assets/DesignKin/cards1.png", "/assets/DesignKin/facturier2.png","/assets/DesignKin/flyer.png",
         "/assets/DesignKin/kashe1.png", "/assets/DesignKin/Logo1.png", "/assets/DesignKin/pullup1.png"
       ]
 
@@ -77,7 +77,7 @@ function Services({Language}) {
     {
       title:"Lightning Protection Installation",
      services:["sportswear manufacturing"],
-      images: ["/assets/LpsKin/Installation1.png", "/assets/LpsKin/Early1.png", "/assets/LpsKin/Iron1.png"]
+      images: ["/assets/LpsKin/installation3.png", "/assets/LpsKin/Early1.png", "/assets/LpsKin/Iron1.png"]
     },
 
     {

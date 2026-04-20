@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { LanguageProvider } from "./components/LanguageContext";
+import ScrollToTop from "./components/scrollToTop";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
 
     <LanguageProvider> 
     <BrowserRouter>
+    <ScrollToTop/>
 
       <Navbar/>
 

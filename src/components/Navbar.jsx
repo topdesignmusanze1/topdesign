@@ -28,15 +28,19 @@ const {lang}=useContext(LanguageContext);
 </div>
 
 
-<div class="langPar">
- <select onChange={(e) => {
-  if (e.target.value === "Eng") engHandler();
-  else kinHandler();
-}}>
-  <option value="Kin">Kinyarwanda</option>
-  <option value="Eng">English</option>
-</select>
+<div className="langPar">
+  <select
+    value={lang === "eng" ? "Eng" : "Kin"}   // bind to context
+    onChange={(e) => {
+      if (e.target.value === "Eng") engHandler();
+      else kinHandler();
+    }}
+  >
+    <option value="Kin">Kinyarwanda</option>
+    <option value="Eng">English</option>
+  </select>
 </div>
+
 <div className="humberger" onClick={menuToggler}>
         <hr />
         <hr />
