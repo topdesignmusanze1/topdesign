@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import { LanguageProvider } from "./components/LanguageContext";
 import ScrollToTop from "./components/scrollToTop";
+import WhatsAppButton from "./components/Whatsapp";
 
 function App() {
 
@@ -29,7 +30,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+<WhatsAppButton/>
       <Footer />
 
     </BrowserRouter>

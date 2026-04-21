@@ -142,7 +142,7 @@ return <img key={index} src={image} alt="service's image"/>
 <div className="sewingCont">
 
   <div className="sideBar">
-    <a href="#sewing" className="serviceHero">{lang==="en" ? "Printing & Branding" : "Printing na Branding"}</a>
+    <a href="#sewing" className="serviceHero">{lang==="eng" ? "Printing & Branding" : "Printing na Branding"}</a>
       <button class="btnSer"><a to="https://wa.me/250736350000" style={{ color: "#2563eb",
     textDecoration:" none",
     fontWeight: "bolder"}}>{lang==="eng" ? "Contact us":"Tuvugishe"}</a></button>
@@ -192,7 +192,7 @@ return <img key={index} src={image} alt="service's image"/>
 <div className="lightningCont">
 
   <div className="sideBar">
-<a href="#lightning" className="serviceHero">{lang==="en" ? "Lightning Protection Installation" : "Imirindankuba"} </a>
+<a href="#lightning" className="serviceHero">{lang==="eng" ? "Lightning Protection Installation" : "Imirindankuba"} </a>
       <button class="btnSer"><a to="https://wa.me/250736350000" style={{ color: "#2563eb",
     textDecoration:" none",
     fontWeight: "bolder"}}>{lang==="eng" ? "Contact us":"Tuvugishe"}</a></button>
