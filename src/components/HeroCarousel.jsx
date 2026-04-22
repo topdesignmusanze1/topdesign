@@ -98,9 +98,9 @@ function HeroCarousel() {
 
               <div className="heroButtons">
                 <button className="heroBtn">
-                  <a className="buttonLink" href="../Services">
+                  <Link className="buttonLink" to="../Services">
                     {lang === "eng" ? "Explore Services" : "Reba ibyo dukora"}
-                  </a>
+                  </Link>
                 </button>
 
                 <button className="heroBtnContact">
