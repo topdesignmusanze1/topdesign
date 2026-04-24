@@ -24,6 +24,8 @@ function Home() {
         {lang === "eng" ? (
           <>
             <title>Top Design – Graphic design, metallic design, branding and printing.</title>
+              <link rel="icon" type="image/png" href="/favicon.png" />
+
 
 <meta name="Top design, Top, in Top design we do Graphic design, Printing & Branding, Metallic design, Lightning protection installation and spotswear school uniforms manufacturing"/>            
 

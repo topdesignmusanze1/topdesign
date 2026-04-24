@@ -21,7 +21,8 @@ function Contact() {
         {lang === "eng" ? (
           <>
             <title>Top Design – Contact Us</title>
-           
+             <link rel="icon" type="image/png" href="/favicon.png" />
+
             <meta name="description" content="Reach Top Design for flyers, banners, logos, branding, printing, metallic design, and lightning protection services."/>
             <link rel="alternate" hreflang="en" href="https://www.topdesign.tech/en/contact" />
             <link rel="alternate" hreflang="rw" href="https://www.topdesign.tech/rw/contact" />

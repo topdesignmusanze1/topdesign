@@ -119,6 +119,8 @@ function Services({ Language }) {
         {lang === "eng" ? (
           <>
             <title>Top Design – Our Services</title>
+              <link rel="icon" type="image/png" href="/favicon.png" />
+
             <meta name="description" content="we make banners, we make flyers, we make badges, we make business cards, we make facturier, we make stamps, we make logos, we make pull-ups, writing on clothes, we make ad brand keys, we brand your business, we make sportswear uniforms, we install lightning rods, and lightning protection, we make metallic structures"/>
             <meta
               name="description"
