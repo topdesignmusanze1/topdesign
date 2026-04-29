@@ -20,8 +20,8 @@ function About() {
       <Helmet>
         {lang === "eng" ? (
           <>
-            <title>Top Design – About Us</title>
-            <meta name="description" content="Learn about Top Design: 12+ years of experience in Graphic design, logos, branding, printing, metallic design, and lightning protection and sportswear school uniforms."/>
+            <title>Top Design – About Us | We are your partner in design.</title>
+            <meta name="description" content="Learn about Top Design: 12+ years of experience in Graphic design, logos, branding, printing, metallic design, lightning protection installation and sportswear school uniforms manufacturing."/>
               <link rel="icon" type="image/png" href="/favicon.png" />
 
             <link rel="alternate" hreflang="en" href="https://www.topdesign.tech/en/about" />
@@ -29,7 +29,7 @@ function About() {
           </>
         ) : (
           <>
-            <title>Top Design – Abo turi bo</title>
+            <title>Top Design – Abo turi bo | Turi abafasha bizewe muri design.</title>
             <meta name="description" content="Menya byinshi kuri Top Design: imyaka irenga 12 mu gukora graphic design, logos, branding, gucapa, metallic design, umurindankuba no gucura impfunguzo."/>
 
             

@@ -20,7 +20,7 @@ function Contact() {
       <Helmet>
         {lang === "eng" ? (
           <>
-            <title>Top Design – Contact Us</title>
+            <title>Top Design – Contact Us | We are only one phone call away.</title>
              <link rel="icon" type="image/png" href="/favicon.png" />
 
             <meta name="description" content="Reach Top Design for flyers, banners, logos, branding, printing, metallic design, and lightning protection services."/>
@@ -29,7 +29,7 @@ function Contact() {
           </>
         ) : (
           <>
-            <title>Top Design – Tuvugishe</title>
+            <title>Top Design – Tuvugishe | Duhita tugusubiza ntagutinda.</title>
             <meta name="description" content="Tuvugishe muri Top Design ku bijyanye na flyers, banners, logos, branding, graphic design, metallic design, umurindankuba no gucura impfunguzo"/>
             
             <link rel="alternate" hreflang="rw" href="https://www.topdesign.tech/rw/contact" />
