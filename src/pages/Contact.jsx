@@ -22,6 +22,7 @@ function Contact() {
           <>
             <title>Top Design – Contact Us | We are only one phone call away.</title>
              <link rel="icon" type="image/png" href="/favicon.png" />
+             <link rel="canonical" href="https://www.topdesign.tech/contact" />
 
             <meta name="description" content="Reach Top Design for flyers, banners, logos, branding, printing, metallic design, and lightning protection services."/>
             <link rel="alternate" hreflang="en" href="https://www.topdesign.tech/en/contact" />

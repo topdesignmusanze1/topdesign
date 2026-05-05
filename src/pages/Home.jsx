@@ -25,6 +25,7 @@ function Home() {
           <>
             <title>Top Design – Graphic design, metallic design, branding and printing.</title>
               <link rel="icon" type="image/png" href="/favicon.png" />
+              <link rel="canonical" href="https://www.topdesign.tech/" />
 
 
 <meta name="Top design, Top, in Top design we do Graphic design, Printing & Branding, Metallic design, Lightning protection installation and spotswear school uniforms manufacturing"/>            

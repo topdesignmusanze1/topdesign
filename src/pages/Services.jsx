@@ -33,10 +33,11 @@ function Services({ Language }) {
       title: "Printing & Branding",
       services: ["Banners", "Stamps", "Logo", "Flyers", "Stickers"],
       images: [
-        "/assets/branding and printing/formats.png",
+        "/assets/branding and printing/dtfPrinter.png",
         "/assets/branding and printing/clothesPrint.png",
         "/assets/branding and printing/Keys.png",
         "/assets/branding and printing/Branding.png",
+        "/assets/branding and printing/CNCPrinter.png"
       ],
     },
     {
@@ -85,6 +86,7 @@ function Services({ Language }) {
         "/assets/BrandingKin/DTF1.png",
         "/assets/BrandingKin/Imyenda1.png",
         "/assets/BrandingKin/Keys1.png",
+        "public/assets/BrandingKin/CNCPrinter.png"
       ],
     },
     {
@@ -120,6 +122,7 @@ function Services({ Language }) {
           <>
             <title>Top Design – Our Services</title>
               <link rel="icon" type="image/png" href="/favicon.png" />
+              <link rel="canonical" href="https://www.topdesign.tech/services" />
 
             <meta name="description" content="we make banners, we make flyers, we make badges, we make business cards, we make facturier, we make stamps, we make logos, we make pull-ups, writing on clothes, we make ad brand keys, we brand your business, we make sportswear uniforms, we install lightning rods, and lightning protection, we make metallic structures"/>
             <meta

@@ -23,6 +23,7 @@ function About() {
             <title>Top Design – About Us | We are your partner in design.</title>
             <meta name="description" content="Learn about Top Design: 12+ years of experience in Graphic design, logos, branding, printing, metallic design, lightning protection installation and sportswear school uniforms manufacturing."/>
               <link rel="icon" type="image/png" href="/favicon.png" />
+              <link rel="canonical" href="https://www.topdesign.tech/about" />
 
             <link rel="alternate" hreflang="en" href="https://www.topdesign.tech/en/about" />
             <link rel="alternate" hreflang="rw" href="https://www.topdesign.tech/rw/about" />
