@@ -86,7 +86,7 @@ function Services({ Language }) {
         "/assets/BrandingKin/DTF1.png",
         "/assets/BrandingKin/Imyenda1.png",
         "/assets/BrandingKin/Keys1.png",
-        "public/assets/BrandingKin/CNCPrinter.png"
+        "/assets/BrandingKin/CNCPrinter.png"
       ],
     },
     {
